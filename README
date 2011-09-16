@@ -1,18 +1,5 @@
-Welcome to your Appcelerator Titanium Mobile Project
+MyMeds by Morten Helliesen and Henrik Kjersem
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+This app will make your day just a little bit better.
 
-
-
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+Have you taken your meds today? Try our app and find out!
