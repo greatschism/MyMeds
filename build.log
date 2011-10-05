@@ -6,11 +6,10 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.018403 seconds on emulator to get ready
+[DEBUG] waited 0.017261 seconds on emulator to get ready
 [DEBUG] com.hkjersem.mymeds installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/app.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/app.js
 [TRACE] COPYING MODIFIED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/ui.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/ui.js
 [INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
@@ -29,3 +28,4 @@ Logfile initialized
 [INFO] Launching application ... MyMeds
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkjersem.mymeds/.MymedsActivity }
 
+[DEBUG] signal caught: 15

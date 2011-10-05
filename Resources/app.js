@@ -1,3 +1,5 @@
+Titanium.UI.setBackgroundColor('#ffffff');
+
 //app namespace
 var mymeds = {
 	test:'test',
@@ -7,8 +9,9 @@ var mymeds = {
 //include files 
 Ti.include('ui.js', 'qr.js')
 
-mymeds.mainWin = mymeds.ui.createApplicationWindow();
-mymeds.mainWin.open()
+//build the app's UI
+var tabs = mymeds.ui.createApplicationTabGroup();
+tabs.open();
 
 /*
 //start app
