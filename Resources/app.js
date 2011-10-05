@@ -7,7 +7,7 @@ var mymeds = {
 }
 
 //include files 
-Ti.include('ui.js', 'qr.js')
+Ti.include('ui.js', 'db.js')
 
 //build the app's UI
 var tabs = mymeds.ui.createApplicationTabGroup();
