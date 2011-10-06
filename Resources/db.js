@@ -46,4 +46,13 @@
 		//Dispatch a message to let others know the database has been updated
 		Ti.App.fireEvent("databaseUpdated");
 	};
+	
+	mymeds.db.delAll = function() {
+		var db = Ti.Database.open('MyMeds3');
+		db.execute("DELETE FROM medisiner");
+		db.close();
+
+		//Dispatch a message to let others know the database has been updated
+		Ti.App.fireEvent("databaseUpdated");
+	}	
 })();

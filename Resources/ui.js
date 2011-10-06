@@ -54,8 +54,18 @@
 	//lager hovedvinduet
 	mymeds.ui.createListWindow = function() {
 		var win = Ti.UI.createWindow({
-			backgroundColor: '#999'
+			backgroundColor: '#999',
+			activity : {
+				onCreateOptionsMenu : function(e) {
+					var menu = e.menu;
+					var m1 = menu.add({ title : 'Slett alle' });
+					m1.addEventListener('click', function(e) {
+						mymeds.db.delAll()
+					});
+				}
+			}
 		})
+		
 		var label= Ti.UI.createLabel({
 			text: 'Du har ikke lagt til noen medisiner enda'
 		})
@@ -69,13 +79,63 @@
 	//lager scannervinduet
 	mymeds.ui.createScannerWindow = function() {
 		var win = Ti.UI.createWindow({
-			backgroundColor: '#999'
+			backgroundColor: '#000',
+			layout: 'vertical'
+		})
+		
+		var pillenavn = Ti.UI.createLabel({
+			text: ' ',
+			top: 25
+		})
+		win.add(pillenavn)
+		
+		var image = Titanium.UI.createImageView({
+			url:'scannerbg.jpg',
+			width: 250,
+			top: 25
+		})
+		win.add(image)
+		
+		var scan = Ti.UI.createButton({
+			title: 'Scan',
+			top: 25
+		})
+		win.add(scan)
+		
+		var buttonGroupView = Ti.UI.createView({
+   			layout: 'horizontal',
+   			top: 25
 		})
 		
 		var leggTil = Ti.UI.createButton({
-			title: 'Legg til'
+			title: 'Legg til',
+			left: '31%'
 		})
-		win.add(leggTil)
+		
+		var avbryt = Ti.UI.createButton({
+			title: 'Avbryt',
+		})
+		
+		buttonGroupView.add(leggTil)
+		buttonGroupView.add(avbryt)
+		
+		var qr = Ti.UI.createImageView({
+			url:'qrscan.jpg',
+			width: 250,
+			top: 25
+		})
+		
+		var randomnumber = 0
+		
+		scan.addEventListener('click',function(){
+			randomnumber = Math.floor(Math.random()*3)
+			win.remove(scan)
+			win.remove(image)
+			win.add(qr)
+			var pille = piller[randomnumber].name
+			pillenavn.text = 'Du har scannet: ' + pille
+			win.add(buttonGroupView)
+		})
 		
 		var piller = [
 			{name: 'sovepiller', info: 'piller som får deg til å sove', sdate: 01012011, fdate: 31122011, klokkeslett: 23, ma: 1, ti: 0, on: 1, to: 1, fr: 0, lo: 0, so: 1},
@@ -84,7 +144,6 @@
 		]
 		
 		leggTil.addEventListener('click', function(){
-			randomnumber = Math.floor(Math.random()*3)
 			mymeds.db.add(
 				piller[randomnumber].name, 
 				piller[randomnumber].info,
@@ -99,6 +158,20 @@
 				piller[randomnumber].lordag,
 				piller[randomnumber].sondag
 			)
+			win.remove(buttonGroupView)
+			tabs.setActiveTab(0)
+			win.remove(qr)
+			win.add(image)
+			pillenavn.text = ''
+			win.add(scan)
+		})
+		
+		avbryt.addEventListener('click', function(){
+			win.remove(buttonGroupView)
+			win.remove(qr)
+			win.add(image)
+			pillenavn.text = ''
+			win.add(scan)
 		})
 		
 		return win
