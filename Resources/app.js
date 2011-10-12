@@ -13,9 +13,6 @@ Ti.include('ui.js', 'db.js')
 var tabs = mymeds.ui.createApplicationTabGroup();
 tabs.open();
 
-/*
-//start app
-var win = Ti.UI.createWindow({ backgroundColor: '#fff' });
-win.add(createQRCodeImageView('Hello, world!', '150x150'));
-win.open();
-*/
+/*if (mymeds.db.list() == 0){
+	alert('Listen er tom. Trykk på "scanner" for å legge til medisiner')
+}*/

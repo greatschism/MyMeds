@@ -3,13 +3,10 @@
 		test: "hei"
 	}
 	
-	//lager en liste med dummy data
 	mymeds.ui.createListeTable = function() {
 		var tv = Ti.UI.createTableView()
 		
 		tv.addEventListener('click', function(e) {
-			//var win = mymeds.ui.createDetailWindow(e.rowData)
-			
 			var win = Titanium.UI.createWindow({
 				layout: 'vertical',
 				title: e.rowData.name
@@ -31,24 +28,26 @@
 			win.add(slett)
 			
 			slett.addEventListener('click', function() {
-				mymeds.db.del(e.rowData.id)
 				Titanium.UI.currentWindow.close()
+				mymeds.db.del(e.rowData.id)
 			})
 			Titanium.UI.currentTab.open(win)
 		});
 		
 		function populateData() {
-			var results = mymeds.db.list()			
+			var results = mymeds.db.list()	
 			tv.setData(results)
+			Ti.fireEvent('remove')
 		}
 		
 		populateData();
 		
 		Ti.App.addEventListener('databaseUpdated', function() { 
     		populateData();
+    		Ti.App.fireEvent("oppdaterVindu");
 		});
 		
-		return tv;
+		return tv
 	}
 	
 	//lager hovedvinduet
@@ -65,14 +64,32 @@
 				}
 			}
 		})
+	
+		var liste = mymeds.ui.createListeTable()
+		var label = Ti.UI.createLabel({
+				text: 'Listen er tom. Trykk på "Scanner" for å legge til medisiner.',
+				color: '#fff',
+				left: 10,
+				right: 10
+			})
 		
-		var label= Ti.UI.createLabel({
-			text: 'Du har ikke lagt til noen medisiner enda'
-		})
-		// HER MÅ VI LAGE EN IF-SETNING SOM SJEKKER OM LISTEN INNEHOLDER NOE win.add(label)
+		function oppdatereVindu(){
+				if (mymeds.db.list() == 0){
+				win.remove(liste)
+				win.add(label)
+			}
+			else {
+				win.remove(label)
+				win.add(liste)
+			}
+		}
 		
-		win.add(mymeds.ui.createListeTable())
-		
+		oppdatereVindu()
+	
+		Ti.App.addEventListener('oppdaterVindu', function() { 
+    		oppdatereVindu()
+		});
+	
 		return win
 	}
 	
@@ -127,7 +144,12 @@
 		
 		var randomnumber = 0
 		
+		var file = Titanium.Filesystem.getFile(Titanium.Filesystem.resourcesDirectory,'camera.wav');
+
+		var sound = Titanium.Media.createSound({sound:file, volume: '10'})
+		
 		scan.addEventListener('click',function(){
+			sound.play()
 			randomnumber = Math.floor(Math.random()*3)
 			win.remove(scan)
 			win.remove(image)
