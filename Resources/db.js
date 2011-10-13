@@ -20,6 +20,14 @@
 				name: result.fieldByName("name"),
 				info: result.fieldByName('info'),
 				klokke: result.fieldByName('klokkeslett'),
+				sluttdato: result.fieldByName('fdate'),
+				mandag: result.fieldByName('mandag'),
+				tirsdag: result.fieldByName('tirsdag'),
+				onsdag: result.fieldByName('onsdag'),
+				torsdag: result.fieldByName('torsdag'),
+				fredag: result.fieldByName('fredag'),
+				lordag: result.fieldByName('lordag'),
+				sondag: result.fieldByName('sondag'),
 			});
 			result.next();
 		}
