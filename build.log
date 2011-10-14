@@ -1,30 +1,96 @@
 Logfile initialized
 [INFO] logfile = /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build.log
-[DEBUG] /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/builder.py simulator MyMeds /Users/hkjersem/Documents/Koding/Android/android-sdk-mac_x86 /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds com.hkjersem.mymeds 6 WVGA854 
-[INFO] Building MyMeds for Android ... one moment
+[DEBUG] /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/builder.py distribute MyMeds /Users/hkjersem/Documents/Koding/Android/android-sdk-mac_x86 /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds com.hkjersem.mymeds /Users/hkjersem/Documents/Koding/Android/keystores/android.keystore 123456 mymeds /Users/hkjersem/Documents/Koding/Android/applikasjoner 6
 [INFO] Titanium SDK version: 1.7.2 (07/21/11 09:36 97c3689)
-[DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.016712 seconds on emulator to get ready
-[DEBUG] com.hkjersem.mymeds installed? True
-[INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/ui.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/ui.js
-[INFO] Tiapp.xml unchanged, skipping class generation
+[INFO] Detected tiapp.xml change, forcing full re-build...
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/appicon.png => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/appicon.png
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/default.png => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/default.png
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/app.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/camera.wav => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/camera.wav
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/dato.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/dato.js
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/db.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/db.js
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/KS_nav_ui.png => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/KS_nav_ui.png
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/KS_nav_views.png => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/KS_nav_views.png
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/qr.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/qr.js
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/qrscan.jpg => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/qrscan.jpg
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/scanner.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/scanner.js
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/scannerbg.jpg => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/scannerbg.jpg
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/ui.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/ui.js
+[TRACE] COPYING CREATED FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/ui_info.js => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/ui_info.js
+[TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
+[TRACE] COPYING FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-long-port-hdpi/Default.png => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-long-port-hdpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-port-hdpi/Default.png => /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-notlong-port-hdpi/default_d44e27d97b.png
+[DEBUG] copying app icon: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] copying /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-long-land-hdpi/default.png splash screen to /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-long-land-hdpi/background.png
 [DEBUG] found drawable-long-land-ldpi splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] copying /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-long-land-ldpi/default.png splash screen to /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-long-land-ldpi/background.png
 [DEBUG] found drawable-long-port-ldpi splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] copying /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-long-port-ldpi/default.png splash screen to /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-long-port-ldpi/background.png
 [DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] copying /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-notlong-land-hdpi/background.png
 [DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] copying /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-notlong-land-ldpi/background.png
 [DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] copying /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-notlong-land-mdpi/background.png
 [DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] copying /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-notlong-port-ldpi/background.png
 [DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-port-mdpi/default.png
-[INFO] Waiting for SDCard to become available..
-[INFO] Re-launching application ... MyMeds
-[INFO] Launching application ... MyMeds
-[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hkjersem.mymeds/.MymedsActivity }
-Warning: Activity not started, its current task has been brought to the front
-
-[INFO] Android Emulator has exited
+[DEBUG] copying /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG] found splash screen at /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/gen/com/hkjersem/mymeds/MymedsActivity.java to javac build list
+[DEBUG] adding /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/gen/com/hkjersem/mymeds/MymedsAppInfo.java to javac build list
+[DEBUG] adding /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/gen/com/hkjersem/mymeds/MymedsApplication.java to javac build list
+[DEBUG] adding /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/gen/com/hkjersem/mymeds/R.java to javac build list
+[DEBUG] Building Java Sources: "/Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/gen/com/hkjersem/mymeds/MymedsActivity.java" "/Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/gen/com/hkjersem/mymeds/MymedsAppInfo.java" "/Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/gen/com/hkjersem/mymeds/MymedsApplication.java" "/Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/gen/com/hkjersem/mymeds/R.java"
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: /Users/hkjersem/Documents/Koding/Titanium Studio Workspace/MyMeds/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
+[DEBUG] from resource zip => assets/Resources/KS_nav_views.png
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/camera.wav
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/Resources/qrscan.jpg
+[DEBUG] from resource zip => assets/Resources/scannerbg.jpg
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/smalljs.jar => org/mozilla/javascript/resources/Messages.properties
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/smalljs.jar => org/mozilla/javascript/resources/Messages_fr.properties
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Users/hkjersem/Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
