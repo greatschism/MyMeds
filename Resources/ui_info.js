@@ -8,6 +8,30 @@ function ui_info () {
 				title: e.rowData.name
 			})
 			
+			/*
+			var calendarButton = Ti.UI.createButton({
+			title: 'Legg til påminnelse'
+			})
+			
+			calendarButton.addEventListener('click', function(){
+				createCalendarReminder()
+				alert('Alarm er lagt til!')
+			})
+			
+			win.add(calendarButton)
+			
+			var calendarDeleteButton = Ti.UI.createButton({
+			title: 'Slett påminnelse'
+			})
+			
+			calendarDeleteButton.addEventListener('click', function(){
+				deleteCalendarReminder()
+				alert('Alarm er slettet!')
+			})
+			
+			win.add(calendarDeleteButton)
+			*/
+				
 			var scrollView = Titanium.UI.createScrollView({
 			    contentHeight:'auto',
 			    layout: 'vertical'
@@ -105,6 +129,7 @@ function ui_info () {
 			{
 			    if (alarmBoolean == false){
 					mymeds.db.changeAlarm(1, e.rowData.id)
+					createCalendarReminder(e.rowData.startdato, e.rowData.klokke, e.rowData.name)
 				}
 				else{
 					mymeds.db.changeAlarm(0, e.rowData.id)

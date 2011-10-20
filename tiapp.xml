@@ -35,7 +35,10 @@
         </orientations>
     </iphone>
     <android xmlns:android="http://schemas.android.com/apk/res/android">
-        <manifest android:versionCode="3" android:versionName="MyMeds v1.2"/>
+        <manifest android:versionCode="3" android:versionName="MyMeds v1.2">
+        <uses-permission android:name="android.permission.READ_CALENDAR"/>
+        <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+        </manifest>
     </android>
     <modules>
         <module version="0.2">

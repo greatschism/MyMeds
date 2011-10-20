@@ -1,7 +1,6 @@
 (function() {
 	mymeds.db = {};
 
-	//bootstrap database
 	var db = Ti.Database.open('MyMeds')
 	//db.execute('DROP TABLE medisiner')
 	db.execute('CREATE TABLE IF NOT EXISTS medisiner(id INTEGER PRIMARY KEY, name TEXT, info TEXT, sdate INTEGER, fdate INTEGER, klokkeslett INTEGER, mandag BOOLEAN, tirsdag BOOLEAN, onsdag BOOLEAN, torsdag BOOLEAN, fredag BOOLEAN, lordag BOOLEAN, sondag BOOLEAN, alarms BOOLEAN)')
@@ -21,6 +20,7 @@
 				name: result.fieldByName("name"),
 				info: result.fieldByName('info'),
 				klokke: result.fieldByName('klokkeslett'),
+				startdato: result.fieldByName('sdate'),
 				sluttdato: result.fieldByName('fdate'),
 				mandag: result.fieldByName('mandag'),
 				tirsdag: result.fieldByName('tirsdag'),
